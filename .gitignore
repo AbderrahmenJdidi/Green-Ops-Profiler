@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.env
+
+# Data & Logs
+emissions.csv
+*.log
+
+# Project Specific
+.ipynb_checkpoints/
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
