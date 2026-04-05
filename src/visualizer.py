@@ -32,7 +32,7 @@ class GreenVisualizer:
 
         plt.title("The Green Frontier: Energy vs. Latency", fontsize=15, pad=20)
         plt.xlabel("Average Latency (seconds)", fontsize=12)
-        plt.ylabel("Energy Consumed (Wh)", fontsize=12)
+        plt.ylabel("Energy Consumed (kWh)", fontsize=12)
         
         # Annotate each point with the model name
         for i in range(summary_df.shape[0]):
@@ -62,6 +62,7 @@ class GreenVisualizer:
         )
         
         plt.title("Carbon Footprint per Model (CO2eq)", fontsize=14)
+        plt.xlabel("DL Models")
         plt.ylabel("Emissions (kg CO2eq)")
         plt.xticks(rotation=45)
         
